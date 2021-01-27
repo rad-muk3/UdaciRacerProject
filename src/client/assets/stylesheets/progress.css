@@ -1,0 +1,203 @@
+/* PROGRESS PAGE SPECIFIC STYLES */
+
+/* -------------------  MOBILE  --------------------- */
+header {
+
+    background-image: url('images/racers.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main#two-columns {
+    margin: 50px 0;
+    display: flex;
+
+}
+
+main#two-columns section {
+    max-width: 50vw;
+}
+
+footer {
+  height: 200px;
+  background-color: #666;
+}
+
+.copyright {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  line-height: 100px;
+  font-size: 0.7em;
+  text-align: center;
+  bottom: 0;
+}
+
+.racetrack {
+  position: relative;
+  margin-top: 40px;
+  border: 2px solid black;
+  width: 70px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+}
+
+
+
+.race-car {
+  position: absolute;
+  padding:1px;
+  width: 55px;
+  height: 50px;
+  background-color: #4CAF50;
+}
+
+
+.racer-name {
+
+  position: absolute;
+  top: 130px;
+  padding-left: 5px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+section#accelerate button {
+    height: 300px;
+    width: 300px;
+    margin: 30px auto;
+    border-radius: 180%;
+    background-color: green;
+    border-color: rgb(14, 166, 6);
+    cursor: pointer;
+}
+
+#big-numbers {
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  main#two-columns {
+    margin: 50px 0;
+  }
+  main#two-columns section#accelerate {
+    flex-direction: column;
+  }
+
+  main#two-columns section#leaderBoard {
+    flex-direction: column;
+  }
+
+  .racetrack {
+    width: 70px;
+    height: 150px;
+  }
+
+  .race-car {
+    height: 75px;
+    width: 60px;
+  }
+
+  .racer-name {
+    top: 150px;
+    font-size: 0.75rem;
+  }
+
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  main#two-columns {
+    margin: 50px 0;
+    flex-direction: row;
+  }
+
+  main#two-columns section {
+    max-width: 50vw;
+    flex-direction: row;
+  }
+
+  main#two-columns section#leaderBoard {
+    flex-direction: column;
+  }
+
+  .racetrack {
+    width: 70px;
+    height: 150px;
+  }
+
+  .race-car {
+    height: 75px;
+    width: 60px;
+  }
+
+  .racer-name {
+    top: 150px;
+    font-size: 0.75rem;
+  }
+
+  main#two-columns section#accelerate {
+    flex-direction: column;
+  }
+
+  section#accelerate button {
+    height: 300px;
+    width: 300px;
+    margin: 30px auto;
+  }
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  main#two-columns {
+    margin: 50px 0;
+    flex-direction: row;
+  }
+
+  main#two-columns section {
+    max-width: 50vw;
+    flex-direction: row;
+  }
+
+  main#two-columns section#leaderBoard {
+    flex-direction: column;
+  }
+
+  .racetrack {
+    width: 70px;
+    height: 150px;
+  }
+
+  .race-car {
+    height: 75px;
+    width: 60px;
+  }
+
+  .racer-name {
+    top: 150px;
+    font-size: 0.75rem;
+  }
+
+  main#two-columns section#accelerate {
+    flex-direction: column;
+  }
+
+  section#accelerate button {
+    height: 300px;
+    width: 300px;
+    margin: 30px auto;
+  }
+}
