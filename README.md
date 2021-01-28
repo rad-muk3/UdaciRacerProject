@@ -27,37 +27,32 @@ The column called LeaderBoard will keep updating the positions of the Racers and
 
 In order to build this game, we need to run two things: the game engine API and the front end.
 
-### Start the Server
 
-The game engine has been compiled down to a binary so that you can run it on any system. Because of this, you cannot edit the API in any way, it is just a black box that we interact with via the API endpoints.
-
-To run the server, locate your operating system and run the associated command in your terminal at the root of the project.
-
-| Your OS               | Command to start the API                                  |
-| --------------------- | --------------------------------------------------------- |
-| Mac                   | `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-osx`   |
-| Windows               | `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server.exe`   |
-| Linux (Ubuntu, etc..) | `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-linux` |
-
-If you are on an older OS and the above command doesn't run for you - or if you know that you are running a 32bit system - add `-32` to the end of the file name. For reference, here are the same commands but for a 32-bit system.
-
-| 32 Bit Systems Only!  | Command to start the API                                     |
-| --------------------- | ------------------------------------------------------------ |
-| Mac                   | `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-osx-32`   |
-| Windows               | `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-32.exe`   |
-| Linux (Ubuntu, etc..) | `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-linux-32` |
-
-Note that this process will use your terminal tab, so you will have to open a new tab and navigate back to the project root to start the front end.
-
-#### WINDOWS USERS -- Setting Environment Variables
-If you are using a windows machine:
-1. `cd` into the root of the project containing data.json
-2. Run the following command to add the environment variable:
-```set DATA_FILE=./data.json```
-
-If you still run into issues running the API server on your machine, you can run this project in the Udacity classroom.
+1. To start the Game API:
+   - Locate your Operating System and type the specific command on the Terminal Window:
+     Example if you are on Mac, open a Terminal window and run
+       `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-osx`  
+      or if you are on Windows or other platforms please use the following:
+       `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server.exe`   
+        `ORIGIN_ALLOWED=http://localhost:3000 ./bin/server-linux`
 
 
-### Start the Frontend
 
-First, run your preference of `npm install && npm start` or `yarn && yarn start` at the root of this project. Then you should be able to access http://localhost:3000.
+2. Start the Frontend
+
+You can either use `npm install && npm start` or `yarn && yarn start` at the root of this project. Then you should be able to access http://localhost:3000.
+If you don't have npm or yarn installed, you can find them in their
+respective sites:
+    Node Install : https://nodejs.org/en/
+    Yarn Install : https://yarnpkg.com/lang/en/docs/install
+
+   Now to  View the UdaciRacerSim App :
+   Open another Terminal Window and run `npm start` This will start your App to listen on port 3000
+   On your Browser Window, type http://localhost:3000
+   This opens your App and start the Race on the Home Page of the App,
+
+
+## Asynchronous Programming
+
+In this project I have made calls to the API endpoints using
+Promises, and Async/Await sequencing with Error handling.    

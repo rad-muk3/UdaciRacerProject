@@ -1,7 +1,7 @@
 // PROVIDED CODE BELOW (LINES 1 - 80) DO NOT REMOVE
 
 // GLOBAL VARIABLES to store ids
-var store = {
+const store = {
   track_id: undefined,
   player_id: undefined,
   race_id: undefined,
@@ -121,7 +121,7 @@ async function handleCreateRace() {
       // render starting UI
       renderAt('#race', renderRaceStartView(race.Track, race.Cars))
 
-      // TODO - update the store with the race id
+      //update the store with the race id
       store.race_id = race.ID - 1;
 
       // The race has been created, now start the countdown
